@@ -1,3 +1,10 @@
-def my_each # put argument(s) here
-  # code here
+def my_each(arr)
+  counter = 0
+  while counter < arr.length
+    n = arr[counter]
+    # Do something with 'n'
+    yield n
+    counter += 1
+  end
+  return arr
 end
